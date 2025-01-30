@@ -4,7 +4,7 @@
 #define _XTAL_FREQ 20000000
 #endif
 
-// --------------- 5×7 Font ---------------
+// --------------- 5Ã—7 Font ---------------
 static const unsigned char font5x7[96][5] = {
     // ASCII 0x20 (Space) through 0x7E (~)
   // Space through ~ characters 
