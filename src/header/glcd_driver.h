@@ -37,7 +37,7 @@ void glcd_draw_bitmap(uint8_t x, uint8_t yPage,
                      uint8_t width, uint8_t height,
                      const uint8_t *bitmap);
 
-// 5×7 Text
+// 5Ã—7 Text
 void glcd_goto_xy(uint8_t x, uint8_t page);
 void glcd_putc(char c);
 void glcd_puts(const char *str);
