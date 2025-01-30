@@ -8,7 +8,7 @@
 // Computed wholenote duration (ms)
 const int wholenote = (60000 * 4) / TEMPO;
 
-// Example snippet of "Für Elise" (adapted)
+// Example snippet of "FÃ¼r Elise" (adapted)
 const Note sonata[] = {
     {NOTE_E4, wholenote/4}, {NOTE_E4, wholenote/4}, {NOTE_F4, wholenote/4}, {NOTE_G4, wholenote/4},
     {NOTE_G4, wholenote/4}, {NOTE_F4, wholenote/4}, {NOTE_E4, wholenote/4}, {NOTE_D4, wholenote/4},
