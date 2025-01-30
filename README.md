@@ -223,18 +223,26 @@ sequenceDiagram
 ## 🗂 Project Structure
 ```
 DICE_ROLLER/
+├── PIC/
+│   └── DICE_PIC.X.production.hex       # Precompiled firmware
 ├── Proteus/
-│   ├── DICE_ROLLER_LCD_PIC.pdsprj    # Simulation project
-│   └── DICE_ROLLER_LCD_PIC.PDF       # Full schematic
-├── Firmware/
-│   └── DICE_PIC.X.production.hex     # Precompiled binary
+│   ├── DICE_ROLLER_LCD_PIC.pdsprj      # Proteus simulation project
+│   └── DICE_ROLLER_LCD_PIC.PDF         # Complete schematic diagram
+├── assets/
+│   ├── DICE_ROLLER_LCD_PIC-1.png       # Example screenshot(s)
+│   └── dice.png                        # Additional dice image
 └── src/
-    ├── drivers/                      # Hardware abstraction
-    │   ├── glcd_driver.c             # KS0108 low-level ops
-    │   └── audio.c                   # Buzzer tone generation
-    └── application/                  # Business logic
-        ├── main.c                    # Core program flow
-        └── music.h                   # Melody definitions
+    ├── header/                         # Header files (prototypes, data)
+    │   ├── audio.h                     # Declarations for beep() & delays
+    │   ├── dice_bitmaps.h              # 40×40 dice bitmap data
+    │   ├── glcd_driver.h               # KS0108 driver functions & definitions
+    │   └── music.h                     # Note definitions & melody structure
+    └── source/                         # C source files (logic, drivers)
+        ├── audio.c                     # Buzzer tone generation & micro delays
+        ├── glcd_driver.c               # KS0108 low-level routines
+        ├── main.c                      # Core application flow & dice rolling
+        └── music.c                     # “Für Elise” melody playback
+
 ```
 
 ---
