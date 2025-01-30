@@ -29,7 +29,7 @@ Features **40×40 pixel animations**, **musical feedback**, and **hardware-accur
 | **Component**       | **Specification**                       | **Pin Mapping/Connection**          |
 |----------------------|-----------------------------------------|---------------------------------------|
 | **PIC16F877A**       | 8-bit MCU @ 20 MHz (HS Mode)           | - OSC1/OSC2: Pins 13-14 (Crystal)<br>- PORTD: RD0-RD7 (GLCD Data Bus)<br>- PORTB: RB0-RB7 (Control Signals) |
-| **KS0108 GLCD**      | 128×64 Graphic Display                  | - RS: RB0<br>- RW: RB1<br>- EN: RB2<br>- CS1: RB3<br>- CS2: RB4<br>- RST: RB5<br>- Data Bus: PORTD (RD0-RD7) |
+| **KS0108 GLCD**      | 128×64 Graphic Display                  | - RS: RB0<br>- RW: RB1<br>- E: RB2<br>- CS1: RB3<br>- CS2: RB4<br>- RST: RB5<br>- Data Bus: PORTD (RD0-RD7)<br>- VO: RV1<br>- VOUT: RV1 |
 | **Buzzer Circuit**   | Passive Buzzer + 2N2222 Driver          | - RB7 → 470Ω (R2) → 2N2222 Base<br>- Collector: Buzzer + 1N4001 Flyback Diode<br>- Emitter: GND |
 | **Roll Button**      | Tactile Switch (Debounced)              | - RB6 → 10kΩ Pull-up (R1)<br>- Switch to GND |
 | **Oscillator**       | 20 MHz Crystal + 22 pF Capacitors       | - X1: 20 MHz Crystal<br>- C1/C2: 22 pF Ceramic Caps (GND) |
