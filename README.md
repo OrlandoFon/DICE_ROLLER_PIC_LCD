@@ -22,6 +22,8 @@ Features **40×40 pixel animations**, **musical feedback**, and **hardware-accur
 
 ## 🛠 Hardware Implementation
 
+![alt text](https://github.com/OrlandoFon/DICE_ROLLER_PIC_LCD/blob/main/assets/DICE_ROLLER_LCD_PIC-1.png)
+
 ### Core Schematic
 
 | **Component**       | **Specification**                       | **Pin Mapping/Connection**          |
